@@ -47,7 +47,6 @@
             },
 
             loadImage: function () {
-                $("body").addClass("blurred");
                 $("img", plugin.lightbox).remove();
                 plugin.lightbox.fadeIn('fast').append('<span class="lightbox-loading"></span>');
 
@@ -182,7 +181,6 @@
                 $('#lightbox').fadeOut('fast', function () {
                     //$(this).remove();
                 });
-                $('body').removeClass('blurred');
             }
         };
 
